@@ -26,7 +26,7 @@ public class MainUAT {
            for (int i = 0; i < 1; i++)
            {
              String name = "Fred";
-             int balance = 30;
+             int balance = 20;
              int limit = 0;
                player = new Player(name, balance);
                player.setLimit(limit);

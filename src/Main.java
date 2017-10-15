@@ -62,12 +62,12 @@ public class Main {
 	                	loseCount++;
                     }
                     
-                } //while
+                }
 
                 System.out.print(String.format("%d turns later.\nEnd Game %d: ", turn, i));
                 System.out.println(String.format("%s now has balance %d\n", player.getName(), player.getBalance()));
                 
-            } //for
+            }
             
             System.out.println(String.format("Win count = %d, Lose Count = %d, %.2f", winCount, loseCount, (float) winCount/(winCount+loseCount)));
             totalWins += winCount;
@@ -78,6 +78,8 @@ public class Main {
         } //while true
         
         System.out.println(String.format("Overall win rate = %.1f%%", (float)(totalWins * 100) / (totalWins + totalLosses)));
+        totalWins = 0;
+        totalLosses =0;
 	}
 
 }
